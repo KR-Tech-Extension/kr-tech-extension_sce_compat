@@ -1,0 +1,74 @@
+sub_units = {
+	flamethrower_sppt = {
+		abbreviation = "FLMTHRWR"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_support_battalions
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 5
+		max_organisation = 10
+		default_morale = 0.3
+		manpower = 100
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.03
+		can_be_parachuted = yes
+		breakthrough = 0.05
+		
+		# Support nerfs to combat abilities
+
+		soft_attack = -0.2
+		defence = -0.2		
+
+
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			support_equipment = 10
+		}
+
+		forest = {
+			attack = 0.05
+		}
+		mountain = {
+			attack = 0.05
+		}
+		jungle = {
+			attack = 0.05
+		}
+		urban = {
+			attack = 0.05
+		}
+		fort = {
+			attack = 0.05
+		}
+		amphibious = {
+			attack = 0.05
+		}
+	}
+}

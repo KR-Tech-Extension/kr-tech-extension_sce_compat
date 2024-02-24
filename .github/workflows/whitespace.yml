@@ -1,0 +1,51 @@
+name: Linter
+
+# Triggers on all PRs and push commit
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+    paths:
+      - '**.asset'
+      - '**.gfx'
+      - '**.gui'
+      - '**.mod'
+      - '**.py'
+      - '**.txt'
+      - '**.yaml'
+      - '**.yml'
+
+# If a new commit is pushed while the an existing one is still running,
+# cancel old in-progress ones.
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
+    steps:
+    - name: Checking out Repository...
+      uses: actions/checkout@v4
+
+    - name: Setting up Python...
+      uses: actions/setup-python@v5
+
+    - name: Installing `ruff`...
+      run: pip install ruff
+
+    - name: Running `ruff` in linter mode on all files...
+      run: ruff check --fix .
+
+    - name: Auto-commiting Fixes...
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: '[Lint] Automatic PDX-style Code Linter'
+        commit_user_name: kaiserlinter[bot]

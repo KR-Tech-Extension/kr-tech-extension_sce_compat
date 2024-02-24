@@ -1,0 +1,83 @@
+sub_units = {
+	raider = {
+		abbreviation = "RAI"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 20
+		ai_priority = 20
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_support_battalions
+			category_all_infantry
+			category_army
+		}
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 30		#mod update
+		default_morale = 0.3
+		manpower = 500
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		recon = 1
+		breakthrough = 3
+
+
+
+		supply_consumption = 0.06
+
+
+		can_be_parachuted = yes
+
+		# Support nerfs to combat abilities
+		defense = -0.3       	     #mod update
+		soft_attack = -0.2
+		hard_attack = -0.5
+		ap_attack = -0.5
+
+		essential = {
+			infantry_equipment
+			support_equipment
+		}
+
+		need = {
+			infantry_equipment = 40
+			support_equipment = 10
+		}
+
+
+		Jungle = {
+			attack = 0.10
+		}
+		Marsh = {
+			attack = 0.05
+		}
+		Mountain = {
+			attack = 0.10
+		}
+		Urban = {
+			attack = 0.10
+		}
+		fort = {
+			attack = 0.10
+		}
+		amphibious = {
+			attack = 0.10
+		}
+	}
+}
