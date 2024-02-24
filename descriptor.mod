@@ -12,3 +12,4 @@ dependencies={
 picture="thumbnail.png"
 supported_version="1.13.*"
 path="C:/Users/sirip/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/navyfieldgfx-hoi4_sce_compat"
+remote_file_id="3167517700"
