@@ -26,7 +26,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			light_tank_destroyer_chassis = 12
+			light_tank_destroyer_chassis = 24
 		}
 		
 		can_be_parachuted = yes
@@ -37,7 +37,7 @@ sub_units = {
 		max_strength = 0.5
 		training_time = 180
 		weight = 0.83
-		supply_consumption = 0.06
+		supply_consumption = 0.1
 		
 		#support unit nerf
 		soft_attack = -0.15
@@ -46,33 +46,6 @@ sub_units = {
 		defense = -0.15
 		ap_attack = -0.1
 		armor_value = -0.15
-
-		forest = {
-		    attack = -0.1
-			movement = -0.2
-		}
-		mountain = 	{
-		    attack = -0.05
-		}
-		jungle = {
-		    attack = -0.15
-			movement = -0.20
-		}
-		marsh = {
-		    attack = -0.05
-			movement = -0.05
-		}
-		urban = {
-			attack = -0.2
-			defence = -0.05
-		}
-		river = { 
-			attack = -0.10
-			movement = -0.10
-		}
-		amphibious = { 
-			attack = -0.30
-		}
 	}
 	
 	support_medium_tank_destroyer = {
@@ -118,36 +91,6 @@ sub_units = {
 		defense = -0.5
 		ap_attack = -0.2
 		armor_value = -0.5
-
-		forest = {
-		    attack = -0.15
-			movement = -0.20
-		}
-		hills = 	{
-		    attack = -0.05
-		}
-		mountain = 	{
-		    attack = -0.10
-		}
-		jungle = {
-		    attack = -0.20
-			movement = -0.20
-		}
-		marsh = {
-		    attack = -0.05
-			movement = -0.05
-		}
-		urban = {
-			attack = -0.20
-			defence = -0.05
-		}
-		river = { 
-			attack = -0.10
-			movement = -0.10
-		}
-		amphibious = { 
-			attack = -0.35
-		}
 	}
 	
 	support_heavy_tank_destroyer = {
@@ -192,39 +135,6 @@ sub_units = {
 		defense = -0.5
 		ap_attack = -0.2
 		armor_value = -0.5
-
-		forest = {
-		    attack = -0.20
-			movement = -0.20
-		}
-		hills = {
-		    attack = -0.10
-		}
-		mountain = 	{
-		    attack = -0.15
-		}
-		jungle = {
-		    attack = -0.30
-			movement = -0.20
-		}
-		marsh = {
-		    attack = -0.20
-			movement = -0.10
-		}
-		urban = {
-			attack = -0.25
-			defence = -0.10
-		}
-		river = { 
-			attack = -0.20
-			movement = -0.20
-		}
-		amphibious = { 
-			attack = -0.40
-		}
-		fort = {
-			attack = 0.05
-		}
 	}
 	
 	support_super_heavy_tank_destroyer = {
@@ -252,7 +162,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			super_heavy_tank_destroyer_chassis = 10
+			super_heavy_tank_destroyer_chassis = 4
 		}
 		manpower = 250
 		max_organisation = 0
@@ -269,39 +179,6 @@ sub_units = {
 		defense = -0.5
 		ap_attack = -0.1
 		armor_value = -0.5
-
-		forest = {
-		    attack = -0.25
-			movement = -0.2
-		}
-		hills = {
-		    attack = -0.15
-		}
-		mountain = 	{
-		    attack = -0.2
-		}
-		jungle = {
-		    attack = -0.35
-			movement = -0.2
-		}
-		marsh = {
-		    attack = -0.25
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.3
-			defence = -0.1
-		}
-		river = { 
-			attack = -0.25
-			movement = -0.25
-		}
-		amphibious = { 
-			attack = -0.5
-		}
-		fort = {
-			attack = 0.15
-		}
 	}
 	
 	support_modern_tank_destroyer = {
@@ -346,35 +223,5 @@ sub_units = {
 		defense = -0.5
 		ap_attack = -0.2
 		armor_value = -0.5
-
-		forest = {
-		    attack = -0.15
-			movement = -0.2
-		}
-		hills = 	{
-		    attack = -0.05
-		}
-		mountain = 	{
-		    attack = -0.1
-		}
-		jungle = {
-		    attack = -0.2
-			movement = -0.2
-		}
-		marsh = {
-		    attack = -0.05
-			movement = -0.05
-		}
-		urban = {
-			attack = -0.2
-			defence = -0.05
-		}
-		river = { 
-			attack = -0.1
-			movement = -0.1
-		}
-		amphibious = { 
-			attack = -0.35
-		}
 	}
 }

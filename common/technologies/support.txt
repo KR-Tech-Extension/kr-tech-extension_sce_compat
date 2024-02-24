@@ -134,7 +134,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -178,8 +178,7 @@ technologies = {
 	tech_engineers2 = {
 
 		engineer = {
-			entrenchment  = 2
-			
+			entrenchment = 0.50
 			fort = {
 				defence = 0.10
 				attack = 0.10
@@ -189,7 +188,6 @@ technologies = {
 		enable_equipment_modules = {
 			dozer_blade
 		}
-		
 		
 		path = {
 			leads_to_tech = tech_engineers3
@@ -231,7 +229,7 @@ technologies = {
 	tech_engineers3 = {
 
 		engineer = {
-			entrenchment  = 2
+			entrenchment = 0.50
 			river = {
 				attack = 0.1	
 				defence = 0.10
@@ -335,7 +333,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -515,7 +513,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1				#modded
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -583,7 +581,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1				#modded
+		research_cost = 1.5
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -616,7 +614,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1				#modded
+		research_cost = 1.5				#modded
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -644,7 +642,7 @@ technologies = {
 			max_organisation = 15		#mod update
 		}
 
-		research_cost = 1.25			#modded
+		research_cost = 1.5				#modded
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -697,7 +695,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -781,14 +779,20 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			
+			battalion_mult = {
+				category = category_all_armor
+				equipment_capture_factor = 0.01
+				add = yes
+			}
+			
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.5				#modded
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -826,7 +830,7 @@ technologies = {
 			equipment_capture_factor = 0.05
 		}
 
-		research_cost = 1.5
+		research_cost = 1.5					#modded
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -879,7 +883,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -972,7 +976,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1					#mod update
+		research_cost = 1.5					#mod update
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1013,7 +1017,7 @@ technologies = {
 			max_organisation = 10			#mod update
 		}
 
-		research_cost = 1					#mod update
+		research_cost = 1.5					#mod update
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -1056,6 +1060,15 @@ technologies = {
 		}
 	}
 
+	NORDIC_supportCollaboration_tech = { # For the Army Capston in the Nordic JFT
+		allow = { always = no } #Only obtained through Focus
+		category_support_battalions = {
+			max_organisation = 10
+			soft_attack = 0.25
+			experience_loss_factor = 0.05
+		}
+	}
+
 	tech_logistics_company = {
 
 		enable_subunits = {
@@ -1077,7 +1090,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 1.5					#mod update
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1178,7 +1191,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1					#mod update
+		research_cost = 1.5					#mod update
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1218,7 +1231,7 @@ technologies = {
 			fuel_consumption_factor = -0.05
 		}
 
-		research_cost = 1					#mod update
+		research_cost = 1.5					#mod update
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -1275,7 +1288,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1449,17 +1462,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1			#mod update
+		research_cost = 1.5				#mod update
 		start_year = 1936
 		folder = {
 			name = support_folder
 			position = { x = 14 y = @1936 }
 		}
-
 		
 		categories = {
 			support_tech
@@ -1499,17 +1507,14 @@ technologies = {
 
 		sniper = {
 			recon = 1
-			max_organisation = 5		#mod update
-			soft_attack = 0.05
+			max_organisation = 10		#mod update
+			soft_attack = 0.1
 			river = {
-				attack = 0.05
-				defence = 0.05
-				movement = 0.05
+				attack = 0.1
+				defence = 0.1
 			}
 			amphibious = {	
-				attack = 0.05
-				defence = 0.1
-				
+				defence = 0.2
 			}
 		}
 		
@@ -1518,11 +1523,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1			#mod update
+		research_cost = 1				#mod update
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -1558,17 +1559,15 @@ technologies = {
 
 		sniper = {
 			recon  = 1
-			max_organisation = 5		#mod update
-			soft_attack = 0.05
+			max_organisation = 10		#mod update
+			soft_attack = 0.1
 			forest = {
-				attack = 0.05
-				defence = 0.05
-				movement = 0.05
+				attack = 0.1
+				defence = 0.1
 			}
 			jungle = {
-				attack = 0.05
-				defence = 0.05
-				movement = 0.05
+				attack = 0.1
+				defence = 0.1
 			}
 		}
 		
@@ -1577,11 +1576,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1			#mod update
+		research_cost = 1				#mod update
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1620,22 +1615,16 @@ technologies = {
 			max_organisation = 10		#mod update
 			soft_attack = 0.1
 			mountain = {
-				attack = 0.05
-				defence = 0.05
-				movement = 0.05
+				attack = 0.1
+				defence = 0.1
 			}
 			hills = {
-				attack = 0.05	
-				defence = 0.05
-				movement = 0.05
+				attack = 0.1	
+				defence = 0.1
 			}
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1			#mod update
+		research_cost = 1				#mod update
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -1680,19 +1669,6 @@ technologies = {
 			flamethrower
 		}
 		
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_dlc = "No Step Back"
-						original_tag = ITA
-						has_completed_focus = ITA_italian_tankettes
-					}
-					ITA_add_basic_light_flamethrower_template = yes
-				}
-			}
-		}
-		
 		
 		on_research_complete = {
 			hidden_effect = {
@@ -1705,11 +1681,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1			#mod update
+		research_cost = 1.5				#mod update
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1756,10 +1728,10 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough  = 0.15
 			fort = {
-				attack = 0.05
+				attack = 0.1
 			}
 			urban = {
-				attack = 0.05
+				attack = 0.1
 			}
 		}
 
@@ -1779,10 +1751,6 @@ technologies = {
 			leads_to_tech = tech_flamethrower_sppt3
 			research_cost_coeff = 1
 		}
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1939
@@ -1822,10 +1790,10 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.15
 			fort = {
-				attack = 0.05
+				attack = 0.1
 			}
 			urban = {
-				attack = 0.05
+				attack = 0.1
 			}
 		}
 		light_flame_tank = {			#mod update
@@ -1856,10 +1824,6 @@ technologies = {
 			leads_to_tech = tech_flamethrower_sppt4
 			research_cost_coeff = 1
 		}		
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1942
@@ -1899,10 +1863,10 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough  = 0.15
 			fort = {
-				attack = 0.05
+				attack = 0.1
 			}
 			urban = {
-				attack = 0.05
+				attack = 0.1
 			}
 		}
 		light_flame_tank = {			#mod update
@@ -1930,10 +1894,6 @@ technologies = {
 			}
 		}
 		
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
 		research_cost = 1
 		start_year = 1945
 		folder = {
@@ -1983,11 +1943,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1				#mod update
+		research_cost = 1.5					#mod update
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -2031,17 +1987,16 @@ technologies = {
 	tech_mortar2 = {
 
 		mortar = {
-			soft_attack = 0.10
+			entrenchment  = 1
+			soft_attack = 0.1
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		
 		path = {
 			leads_to_tech = tech_mortar3
 			research_cost_coeff = 1
 		}
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1939
@@ -2078,17 +2033,16 @@ technologies = {
 	tech_mortar3 = {
 
 		mortar = {
-			soft_attack = 0.10
+			entrenchment  = 1
+			soft_attack = 0.1
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 	
 		path = {
 			leads_to_tech = tech_mortar4
 			research_cost_coeff = 1
 		}		
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1942
@@ -2125,14 +2079,12 @@ technologies = {
 	tech_mortar4 = {
 
 		mortar = {
-			soft_attack = 0.10
-			
+			entrenchment = 1
+			soft_attack = 0.1
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-		
 		research_cost = 1
 		start_year = 1945
 		folder = {
@@ -2182,11 +2134,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1				#mod update
+		research_cost = 1					#mod update
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -2233,7 +2181,7 @@ technologies = {
 		suppression_factor = 0.05
 		recon = 0.5
 		urban = {
-			attack = 0.05
+			attack = 0.1
 		}
 		}
 		
@@ -2241,10 +2189,6 @@ technologies = {
 			leads_to_tech = tech_wardog3
 			research_cost_coeff = 1
 		}
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1939
@@ -2284,7 +2228,7 @@ technologies = {
 		suppression_factor = 0.05
 		soft_attack = 0.05
 		urban = {
-			attack = 0.05
+			attack = 0.1
 		}
 		}
 	
@@ -2292,10 +2236,6 @@ technologies = {
 			leads_to_tech = tech_wardog4
 			research_cost_coeff = 1
 		}		
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1942
@@ -2335,13 +2275,9 @@ technologies = {
 		soft_attack = 0.05
 		suppression_factor = 0.05
 		urban = {
-			attack = 0.05
+			attack = 0.1
 		}
 		}
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1945
@@ -2392,11 +2328,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -2440,21 +2372,9 @@ technologies = {
 	tech_command2 = {
 
 		command = {
-		max_organisation = 5
+		max_organisation = 10
 		default_morale = 0.5
-		amphibious = {
-			attack = 0.15
-			defence = 0.1
-		}
-		Mountain = {
-			attack = 0.05
-			defence = 0.05
-			movement = 0.05
-		}
-		fort = {
-			attack = 0.15
-			defence = 0.25
-		}
+		combat_width = -1
 		}
 		
 		path = {
@@ -2462,11 +2382,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -2501,23 +2417,9 @@ technologies = {
 	tech_command3 = {
 
 		command = {
-		max_organisation = 5
+		max_organisation = 10
 		default_morale = 0.5
-		Jungle = {
-			attack = 0.05
-			defence = 0.05
-			movement = 0.05
-		}
-		Desert = {
-			attack = 0.05
-			defence = 0.05
-			movement = 0.05
-		}
-		Urban = {
-			attack = 0.05
-			defence = 0.05
-			movement = 0.05
-		}
+		combat_width = -1
 		}
 	
 		path = {
@@ -2525,11 +2427,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -2567,14 +2465,9 @@ technologies = {
 		max_organisation = 10
 		default_morale = 0.5
 		combat_width = -1
-		
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -2614,7 +2507,7 @@ technologies = {
 		
 		on_research_complete = {
 			hidden_effect = {
-				army_experience = 5			#mod update
+				army_experience = 10			#mod update
 				}
 		}
 			
@@ -2622,10 +2515,6 @@ technologies = {
 			leads_to_tech = tech_gunner2
 			research_cost_coeff = 1
 		}
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1936
@@ -2674,8 +2563,6 @@ technologies = {
 			max_organisation = 5
 			default_morale = 0.1
 			soft_attack = 0.1
-			ap_attack = 0.2
-		    hard_attack = 0.1
 			entrenchment  = 1
 		}
 		
@@ -2683,10 +2570,6 @@ technologies = {
 			leads_to_tech = tech_gunner3
 			research_cost_coeff = 1
 		}
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1939
@@ -2726,10 +2609,8 @@ technologies = {
 			max_organisation = 5
 			default_morale = 0.1
 			soft_attack = 0.1
-			ap_attack = 0.2
-		    hard_attack = 0.1
 			river = {
-				defence = 0.08
+				defence = 0.1
 			}
 		}
 	
@@ -2737,10 +2618,6 @@ technologies = {
 			leads_to_tech = tech_gunner4
 			research_cost_coeff = 1
 		}		
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1942
@@ -2780,13 +2657,8 @@ technologies = {
 			max_organisation = 5
 			default_morale = 0.2
 			soft_attack = 0.1
-			ap_attack = 0.2
-		    hard_attack = 0.1
+			breakthrough = 0.1
 		}
-
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
 
 		research_cost = 1
 		start_year = 1945
@@ -2828,7 +2700,7 @@ technologies = {
 		
 		on_research_complete = {
 			hidden_effect = {
-				army_experience = 5			#mod update
+				army_experience = 10			#mod update
 				}
 		}
 		
@@ -2837,11 +2709,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1				#mod update
+		research_cost = 1.5					#mod update
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -2898,11 +2766,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -2950,11 +2814,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -2997,11 +2857,7 @@ technologies = {
 			breakthrough = 0.05
 		}
 
-		xp_research_type = army
-		xp_boost_cost = 50
-		xp_research_bonus = 1
-
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -3101,11 +2957,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.5
 			
 			modifier = {
 				is_major = yes
-				factor = 2
+				factor = 1
 			}
 
 			modifier = {

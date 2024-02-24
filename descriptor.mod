@@ -7,7 +7,7 @@ tags={
 }
 dependencies={
 	"KR Tech Extension"
-	"Support Company Expansion 1.13 Fix"
+	"Support Company Expansion 1.13"
 }
 picture="thumbnail.png"
 supported_version="1.13.*"

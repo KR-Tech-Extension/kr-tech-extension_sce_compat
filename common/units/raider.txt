@@ -26,29 +26,26 @@ sub_units = {
 		combat_width = 0
 	
 		#Size Definitions
-		max_strength = 2
-		max_organisation = 30		#mod update
-		default_morale = 0.3
-		manpower = 500
-		training_time = 120
+		max_strength = 10
+		max_organisation = 50		#mod update
+		breakthrough = 0.5
+		default_morale = 0.5
+		manpower = 150
+		training_time = 200
 
 		#Misc Abilities
 		weight = 0.1
+		supply_consumption = 0.03
 		recon = 1
-		breakthrough = 3
-
-
-
-		supply_consumption = 0.06
-
-
+		entrenchment = 1
 		can_be_parachuted = yes
-
+		
 		# Support nerfs to combat abilities
-		defense = -0.3       	     #mod update
-		soft_attack = -0.2
-		hard_attack = -0.5
-		ap_attack = -0.5
+		defense = 0.1
+		soft_attack = 0.5
+		hard_attack = 0.05
+		ap_attack = 0.05
+		breakthrough = 0.05
 
 		essential = {
 			infantry_equipment
@@ -56,28 +53,8 @@ sub_units = {
 		}
 
 		need = {
-			infantry_equipment = 40
+			infantry_equipment = 140
 			support_equipment = 10
-		}
-
-
-		Jungle = {
-			attack = 0.10
-		}
-		Marsh = {
-			attack = 0.05
-		}
-		Mountain = {
-			attack = 0.10
-		}
-		Urban = {
-			attack = 0.10
-		}
-		fort = {
-			attack = 0.10
-		}
-		amphibious = {
-			attack = 0.10
 		}
 	}
 }
