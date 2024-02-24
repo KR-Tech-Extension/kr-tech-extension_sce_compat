@@ -1,4 +1,4 @@
-name="KR Tech Extension-SCE Compatibility Patch"
+name="KR Tech Extension-SCE 1.13 Compatibility Patch"
 tags={
 	"Alternative History"
 	"Graphics"
@@ -11,5 +11,4 @@ dependencies={
 }
 picture="thumbnail.png"
 supported_version="1.13.*"
-path="C:/Users/sirip/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/navyfieldgfx_hoi4_sce_compat"
-remote_file_id="3105210203"
+path="C:/Users/sirip/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/navyfield-hoi4_sce_compat"
