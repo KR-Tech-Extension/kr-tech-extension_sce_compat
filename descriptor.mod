@@ -11,4 +11,4 @@ dependencies={
 }
 picture="thumbnail.png"
 supported_version="1.13.*"
-path="C:/Users/sirip/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/navyfield-hoi4_sce_compat"
+path="C:/Users/sirip/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/navyfieldgfx-hoi4_sce_compat"
