@@ -3340,6 +3340,19 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
+
+				instantTextBoxType = {
+					name = "wonderweapon_year19"
+					position = { x = 0 y = 2180 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1959"
+					maxWidth = 130
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
 			}
 
 			instantTextBoxType = {
