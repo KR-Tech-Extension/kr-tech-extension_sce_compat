@@ -1,6 +1,6 @@
 # KR Tech Extension-SCE 1.13 Compatibility Patch
 
-### Last Updated for May 5, 2024. (KR's 1.1.2 release)
+### Last Updated for May 5, 2024. (KR's 1.1.3 release)
 ### This compatibility patch will only be updated as needed, but will otherwise always work with the latest KR Tech Extension and Support Company Expansion mod release.
 
 This is the official compatibility patch for [KR Tech Extension](https://steamcommunity.com/sharedfiles/filedetails/?id=3105210203) and [Support Company Expansion 1.13](https://steamcommunity.com/sharedfiles/filedetails/?id=2690847683) - only the most basic integration to get both working together, don't expect expanded tree for SCE's stuff anytime soon.
