@@ -1,0 +1,43 @@
+# PDX-Style Code Linter
+
+# Exclude the following folder; Note: "map" for HoI4, "map_data" for CK3
+exclude = [
+    ".github",
+    ".vscode",
+    "map",
+    "map_data",
+]
+
+# Now extends to include the following file types:
+extend-include = [
+    "*.asset",
+    "*.gfx",
+    "*.gui",
+    "*.mod",
+    "*.txt",
+    "*.yaml",
+    "*.yml",
+]
+
+# The following [lint] rules mimic Paradox Interactive's proper indentation styling:
+# - Trailing whitespace (W291): There should be no whitespace after the final character in a line.
+# - No newline at end of file (W292): Files should end with a newline.
+# - Blank line contains whitespace (W293): Blank lines should not contain any tabs or spaces.
+# - Blank line at end of file (W391): There should be one, and only one, blank line at the end of each file. This warning will occur when there are zero, two, or more than two blank lines. *NOT IMPLEMENTED YET BY RUFF
+
+# Ignored Rules:
+# - Line too long (E501): We should ignore this altogether, especially for loc files.
+# - Syntax Error (E999): We are abusing their python linter for Paradox's LUA, no need for this.
+
+[lint]
+# `ruff` linter rules; see all possible config rules here: https://docs.astral.sh/ruff/configuration/
+select = [
+    "W291",
+    "W292",
+    "W293",
+]
+ignore = ["E501", "E999"]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
